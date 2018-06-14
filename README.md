@@ -26,7 +26,7 @@ Interop class has jsdoc style comments included on most public functions, have a
 ## Samples
 
 A working sample is included, it contains three UI5 applications  
-**sample.container** : a sample container app, complete with Master/Detail/Right/Header/InnerRight panels for navigation, and the option for users to shift content between the Main and Right hand panels  
+**sample.container** : a sample container app, complete with Master/Detail/Right/Header/InnerRight panels for navigation, and the option for users to shift content between the Main and Right hand panels, also has routes for setting the default master/detail contents from hyperlinks  
 **sample.demoapp1** : just a normal split app Master/Detail using a static json model for data  
 **sample.demoapp2** : a nothing app, just used to demonstrate that app1 can navigate to app2 and run at the same time  
 
