@@ -33,8 +33,8 @@ A working sample is included, it contains three UI5 applications
 Both demo apps can run in standalone mode (from their own Index)
 demonstrating the fallback logic of Interop, and how the standard fiori pattern is not deviated from
 
-to see the containers in action launch **/container/index.html**  
-to prove that the apps aren't dependant on interop to run and can still run standalone like a normal UI5 app, launch **/demoapp1/index.html**  
+to see the containers in action, upload the entire repository to Hana and launch **/container/index.html**  
+to prove that the apps aren't dependent on interop to run and can still run standalone mode like a normal UI5 app, launch **/demoapp1/index.html**  
 
 ## Environment
 
