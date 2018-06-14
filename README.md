@@ -12,13 +12,6 @@ All apps that run this way, can be built in the usual UI5 way with standard rout
 So all of your existing UI5 apps can be run in containers
 (But, if you are using global variables or .getCore you might be in trouble, these are practises that should be avoided anyway though)
 
-### Why not just use ComponentContainer ?
-
-Well... Try it. It does not achieve the same thing here.
-Interop allows your apps to have zero dependency on each other and can route independently.  
-While ComponentContainr can be used to embed apps inside each other, it is limited in its flexibility thus usually results in tight-coupling of code
-
-
 ## Classes
 
 Classes
