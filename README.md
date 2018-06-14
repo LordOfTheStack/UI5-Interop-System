@@ -27,7 +27,7 @@ Interop class has jsdoc style comments included on most public functions, have a
 A working sample is included, it contains three UI5 applications  
 **sample.container** : a sample container app, complete with Master/Detail/Right/Header/InnerRight panels for navigation, and the option for users to shift content between the Main and Right hand panels  
 **sample.demoapp1** : just a normal split app Master/Detail using a static json model for data  
-**sample.demoapp2** : a nothing app, just used to demonstrate that app1 to navigate to app2 and run at the same times  
+**sample.demoapp2** : a nothing app, just used to demonstrate that app1 can navigate to app2 and run at the same time  
 
 Both demo apps can run in standalone mode (from their own Index)
 demonstrating the fallback logic of Interop, and how the standard fiori pattern is not deviated from
