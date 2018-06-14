@@ -15,26 +15,26 @@ So all of your existing UI5 apps can be run in containers
 ## Classes
 
 Classes
-dalrae.ui5.routing.Interop : this class is where the magic happens, you will use it to raise and listen to events, and perform container navigations
-dalrae.ui5.routing.Container : this is a UI element you can use in your XML views, this is the quickest and easiest way to setup a container page for your applications to run inside of
-dalrae.ui5.BaseController : this is a base controller that your apps controllers must inherit to make proper use of all of Interops features (you could also just read over this and incorporate its code into your own base)
-dalrae.ui5.BaseComponent : (optional) this is a base component that your apps component can inherit
-dalrae.ui5.util.Functions : just has some functions in it, utilised by Interop
-dalrae.ui5.util.jQuery : just has a few jQuery extensions in it, utilised by Interop
-
-Interop class has jsdoc style comments included on most public functions, have a read through
+dalrae.ui5.routing.Interop : this class is where the magic happens, you will use it to raise and listen to events, and perform container navigations  
+dalrae.ui5.routing.Container : this is a UI element you can use in your XML views, this is the quickest and easiest way to setup a container page for your applications to run inside of  
+dalrae.ui5.BaseController : this is a base controller that your apps controllers must inherit to make proper use of all of Interops features (you could also just read over this and incorporate its code into your own base)  
+dalrae.ui5.BaseComponent : (optional) this is a base component that your apps component can inherit  
+dalrae.ui5.util.Functions : just has some functions in it, utilised by Interop  
+dalrae.ui5.util.jQuery : just has a few jQuery extensions in it, utilised by Interop  
+  
+Interop class has jsdoc style comments included on most public functions, have a read through  
 
 ## Samples
 
 A working sample is included, it contains three UI5 applications
-sample.container : a sample container app, complete with Master/Detail/Right/Header/InnerRight panels for navigation, and the option for users to shift content between the Main and Right hand panels 
-sample.demoapp1 : just a normal split app Master/Detail using a static json model for data
-sample.demoapp2 : a nothing app, just used to demonstrate that app1 to navigate to app2 and run at the same times
+sample.container : a sample container app, complete with Master/Detail/Right/Header/InnerRight panels for navigation, and the option for users to shift content between the Main and Right hand panels  
+sample.demoapp1 : just a normal split app Master/Detail using a static json model for data  
+sample.demoapp2 : a nothing app, just used to demonstrate that app1 to navigate to app2 and run at the same times  
 
 Both demo apps can run in standalone mode (from their own Index)
 demonstrating the fallback logic of Interop, and how the standard fiori pattern is not deviated from
 
-to see the containers in action launch /container/index.html
+to see the containers in action launch /container/index.html  
 to prove that the apps aren't dependant on interop to run and can still run standalone like a normal UI5 app, launch /demoapp1/index.html
 
 ## Environment
