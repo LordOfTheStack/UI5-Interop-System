@@ -8,9 +8,8 @@ This class also provides methods for communicating between those applications (s
 Basically, you can use this to compare two client records (instantiate the same fiori view twice, side by side, with different route params)
 Or even run completely different applications independently in the same window (for example, your Inbox in a side or top panel, so you can keep track of your job queue at all times)
 
-All apps that run this way, can be built in the usual UI5 way with standard routers
-So all of your existing UI5 apps can be run in containers
-(But, if you are using global variables or .getCore you might be in trouble, these are practises that should be avoided anyway though)
+All apps that run this way, can be built in the usual UI5 way with standard routers. So all of your existing UI5 apps can be run in containers, and any new apps you build using Interop can still run as standalone applications when necessary. (aka: no dependency or coupling!)
+
 
 ## Classes
 
