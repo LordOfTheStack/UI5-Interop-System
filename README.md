@@ -9,7 +9,8 @@ Basically, you can use this to compare two client records (instantiate the same 
 Or even run completely different applications independently in the same window (for example, your Inbox in a side or top panel, so you can keep track of your job queue at all times)
 
 All apps that run this way, can be built in the usual UI5 way with standard routers. So all of your existing UI5 apps can be run in containers, and any new apps you build using Interop can still run as standalone applications when necessary. (aka: no dependency or coupling!)
-
+  
+It it assumed that all applications using Interop use two word namespaces. eg: "product.app" if this isn't the case you will run into trouble.
 
 ## Classes
 
