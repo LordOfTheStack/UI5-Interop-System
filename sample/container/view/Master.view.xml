@@ -1,7 +1,7 @@
 <mvc:View controllerName="sample.container.view.Master" xmlns="sap.m"
 	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
 	xmlns:co="sap.ui.commons"
-	xmlns:dhs="dalrae.ui5.routing"
+	xmlns:routing="dalrae.ui5.routing"
 	xmlns:f="sap.f">
 	<f:DynamicPage
 		id="pMaster"
@@ -25,12 +25,12 @@
 		<f:header>
 			<f:DynamicPageHeader pinnable="false" expanded="false">
 				<f:content>
-					<dhs:Container name="masterheader" height="70px" />
+					<routing:Container name="masterheader" height="70px" />
 				</f:content>
 			</f:DynamicPageHeader>
 		</f:header>
 		<f:content>
-			<dhs:Container name="master" />
+			<routing:Container name="master" />
 		</f:content>
 		<f:footer>
 		

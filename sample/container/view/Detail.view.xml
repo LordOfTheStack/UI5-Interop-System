@@ -1,7 +1,7 @@
 <mvc:View controllerName="sample.container.view.Detail" xmlns="sap.m"
 	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
 	xmlns:co="sap.ui.commons"
-	xmlns:dhs="dalrae.ui5.routing"
+	xmlns:routing="dalrae.ui5.routing"
 	xmlns:f="sap.f">
 	<l:DynamicSideContent id="pBigSide" 
 	showSideContent="{Layout>/RightPanelOpen}" 
@@ -40,7 +40,7 @@
 					<f:DynamicPageHeader pinnable="false" id="pHeader" expanded="false">
 						<f:content>
 							
-							<dhs:Container id="cHeader" name="header" height="70px" ready="onLoad" />
+							<routing:Container id="cHeader" name="header" height="70px" ready="onLoad" />
 							
 						</f:content>
 					</f:DynamicPageHeader>
@@ -49,12 +49,12 @@
 					<l:DynamicSideContent id="pSide" showSideContent="false">
 						<l:mainContent>
 							
-							<dhs:Container name="main"  />
+							<routing:Container name="main"  />
 							
 						</l:mainContent>
 						<l:sideContent>
 							
-							<dhs:Container name="inner" />
+							<routing:Container name="inner" />
 							
 						</l:sideContent>
 					</l:DynamicSideContent>
@@ -103,7 +103,7 @@
 				</f:header>
 				<f:content>
 					
-					<dhs:Container name="right" />
+					<routing:Container name="right" />
 					
 				</f:content>
 			</f:DynamicPage>
@@ -111,7 +111,7 @@
 	</l:DynamicSideContent>
 	<Dialog id="dialogContainer" draggable="true" resizable="true" contentWidth="800px" contentHeight="700px" width="800px" height="700px" >
 	    <content>
-	        <dhs:Container name="dialog"  />
+	        <routing:Container name="dialog"  />
 	    </content>
 	</Dialog>
 </mvc:View>
