@@ -1,0 +1,56 @@
+<mvc:View 
+    controllerName="sample.demoapp1.controller.Master"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    >
+		
+        <Page 
+        floatingFooter="true"
+		title="Client Search"
+        >
+        <subHeader>
+            <Bar 
+                id="searchBar">
+            	<contentLeft>
+            		<!--<Button icon="sap-icon://navigation-right-arrow" press="onExpandSearch" id="btnExpand" tooltip="More search criteria" />-->
+            	</contentLeft>
+                <contentMiddle>
+                    <SearchField 
+                        id="searchField" 
+                        search="onSearch" 
+                        width="100%" 
+                        placeholder="{i18n>masterSearchPlaceholder}" 
+                        showRefreshButton="{device>/isNoTouch}" 
+                        tooltip="{i18n>masterSearchTooltip}">
+                    </SearchField>
+                </contentMiddle>
+            </Bar>
+            
+        </subHeader>
+        <content>
+        
+            <List 
+                id="lstResults" 
+                select="onSelect" 
+                mode="{device>/listMode}" 
+                noDataText="{i18n>masterListNoDataText}" 
+                growing="true" 
+                growingScrollToLoad="true" 
+				updateFinished="onFinished">
+                <items>
+                    
+                </items>
+            </List>
+        </content>
+        <footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="" icon="sap-icon://add" press="onNew" />
+			</Toolbar>
+		</footer>
+        
+       
+        
+    </Page>
+</mvc:View>

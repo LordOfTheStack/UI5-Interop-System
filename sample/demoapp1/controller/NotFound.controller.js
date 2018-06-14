@@ -1,0 +1,1 @@
+sap.ui.core.mvc.Controller.extend("sample.demoapp1.controller.NotFound", {});

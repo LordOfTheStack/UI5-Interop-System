@@ -1,0 +1,28 @@
+<mvc:View controllerName="sample.container.view.panels.BusinessPartner" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:co="sap.ui.commons" xmlns:vcr="dalrae.ui5.routing" xmlns:f="sap.ui.layout.form"
+	xmlns:uxap="sap.uxap"
+	xmlns:scro="sap.suite.ui.commons" xmlns:dhs="dalrae.ui5.routing">
+	<Page navButtonPress="onNavBack" title="{i18n>detailTitle}" showNavButton="false" enableScrolling="false" backgroundDesign="Transparent">
+		<content>
+			<ObjectHeader
+				icon="sap-icon://account"
+				title="John Doe Doherty"
+				fullScreenOptimized="true"
+				>
+				<attributes>
+					<ObjectAttribute title="Address" text="82 Governor Av, Holland Park" />
+					<ObjectAttribute title="       " text="Cranberria, ACT 2905" />
+				</attributes>
+				<statuses>
+					<ObjectStatus icon="sapicon://accept" title="Approved" state="Success" />
+				</statuses>
+				<markers>
+					<ObjectMarker 
+					type="Unsaved" />
+				</markers>
+				
+			</ObjectHeader>
+		
+		</content>
+	</Page>
+</mvc:View>

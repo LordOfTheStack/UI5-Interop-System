@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:frm="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+		<ActionSheet
+			placement="Bottom">
+				<buttons>
+					
+					<Button id="btnModeSuperkey" text="Superkey"	press="onModeSuperkey"	icon="sap-icon://blank" width="150px" />
+					<Button id="btnModeWorkflow" text="Workflow"	press="onModeWorkflow"	icon="sap-icon://blank" width="150px" />
+					<Button id="btnModeInfo"	 text="Information" press="onModeInfo"		icon="sap-icon://blank" width="150px" />
+					
+				</buttons>
+		</ActionSheet>
+</core:FragmentDefinition>

@@ -1,0 +1,28 @@
+<mvc:View controllerName="sample.demoapp1.controller.More" 
+xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:co="sap.ui.commons"
+	xmlns:f="sap.ui.layout.form">
+	<Page floatingFooter="true" title="Client">
+		<content>
+			
+					
+			<f:SimpleForm>
+				<core:Title text="Client: {Name}" />
+			</f:SimpleForm>
+			
+			<List headerText="Incidents involving {Name}" items="{Incidents}">
+				<items>
+					<StandardListItem title="{IncidentDate}: {IncidentText}" key="{IncidentDate}" />
+				</items>
+			</List>
+			
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Back" icon="sap-icon://action" press="onDemonstrateNavTo1"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

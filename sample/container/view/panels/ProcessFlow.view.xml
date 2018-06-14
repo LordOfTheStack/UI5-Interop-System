@@ -1,0 +1,16 @@
+<mvc:View controllerName="sample.container.view.panels.ProcessFlow" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:co="sap.ui.commons" xmlns:vcr="dalrae.ui5.routing" xmlns:f="sap.ui.layout.form"
+	xmlns:scro="sap.suite.ui.commons" xmlns:dhs="dalrae.ui5.routing">
+	<Page navButtonPress="onNavBack" title="{i18n>detailTitle}" showNavButton="false" enableScrolling="false" backgroundDesign="Transparent">
+		<content>
+			<Title id="workflowTitle" text="{wsModel>/Name}" width="100%" textAlign="Center"/>
+			<FlexBox width="100%" alignItems="Center" justifyContent="Center">
+				<items>
+					<dhs:ProcessStepBar id="processStepBar" Steps="{wsModel>/Steps}" Width="100%" header="true">
+						<dhs:ProcessStep Text="{wsModel>title}" Visited="{wsModel>visited}" Number="{wsModel>number}" press="onPress"></dhs:ProcessStep>
+					</dhs:ProcessStepBar>
+				</items>
+			</FlexBox>
+		</content>
+	</Page>
+</mvc:View>

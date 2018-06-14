@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:frm="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+		<ActionSheet
+			placement="Bottom">
+				<buttons>
+					
+					<Button id="btnNavHelp" 		text="Help Index"			press="onNavHelp"		icon="sap-icon://blank" width="150px" />
+					<Button id="btnNavDirectory"	text="Process Directory"	press="onNavDirectory"	icon="sap-icon://blank" width="150px" />
+					
+				</buttons>
+		</ActionSheet>
+</core:FragmentDefinition>

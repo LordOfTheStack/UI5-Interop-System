@@ -1,0 +1,9 @@
+<mvc:View
+	controllerName="sample.container.view.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns="sap.m">
+	<SplitApp 
+	    id="idAppControl" 
+	    mode="HideMode"/>
+</mvc:View>

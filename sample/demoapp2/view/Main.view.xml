@@ -1,0 +1,23 @@
+<mvc:View 
+    controllerName="sample.demoapp2.controller.Main"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    >
+	
+			<Page title="Demo Cross-App Nav"
+			floatingFooter="true">
+				<content>
+				        
+				        <f:SimpleForm>
+						
+							<Label text="This is a view in" />
+							<Text text="Demo App 2" />
+						
+						</f:SimpleForm>
+				        
+				        
+				</content>
+			</Page>
+</mvc:View>

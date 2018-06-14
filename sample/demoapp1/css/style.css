@@ -1,0 +1,12 @@
+.labelWrap {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+.noBottomBorder > div.sapMPanelContent {
+	border-bottom: 0 !important;
+}
+
+.spacerTop {
+    margin-top: 2rem;
+}

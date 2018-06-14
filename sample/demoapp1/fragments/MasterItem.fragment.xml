@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:dhs="dalrae.commons.controls"
+	xmlns:z="dalrae.accessibility.controls" xmlns="sap.m">
+	
+	<ObjectListItem 
+		title="{Name}"
+		icon="sap-icon://person-placeholder"
+		numberUnit=""
+        markFavorite="false" 
+        markFlagged="false" 
+        showMarkers="false">
+        <attributes>
+            <ObjectAttribute text="DOB {DOB}" />
+        </attributes>
+    </ObjectListItem>
+		
+</core:FragmentDefinition>

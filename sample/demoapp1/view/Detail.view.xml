@@ -1,0 +1,65 @@
+<mvc:View controllerName="sample.demoapp1.controller.Detail" 
+xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:co="sap.ui.commons"
+	xmlns:f="sap.ui.layout.form">
+	<Page floatingFooter="true" title="Client">
+		<content>
+			
+					
+			<ObjectHeader 
+                id="detailHeader" 
+                class="detailHeader"
+				title="{Name}"
+				number="{ID}"
+				numberUnit="Client file number"
+                introActive="false" 
+                titleActive="false" 
+                iconActive="false"
+                backgroundDesign="Solid">
+               
+                <attributes>
+        			<ObjectAttribute id="attrAge" title="DOB" text="{DOB}" />
+                </attributes> 
+                <statuses>
+			        
+		        </statuses>
+
+            </ObjectHeader>
+            
+            <IconTabBar 
+                id="idIconTabBar" 
+                expanded="true" 
+				expandable="false"> 
+    			<items>
+                    <IconTabFilter 
+                        id="tabSummary"
+                        text="Biography"
+                        key="Summary">
+                        <content>
+                            
+                            <f:SimpleForm>
+								<TextArea value="{Bio}" rows="7" editable="false" />
+							</f:SimpleForm>
+							
+                            	
+                            
+                        </content>
+                    </IconTabFilter>
+                    
+                    
+                   	
+                </items>
+            </IconTabBar>
+			
+			
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Navigate Within App" icon="sap-icon://action" press="onDemonstrateNavTo1"/>
+				<Button text="Navigate To Another App" icon="sap-icon://action" press="onDemonstrateNavTo2"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

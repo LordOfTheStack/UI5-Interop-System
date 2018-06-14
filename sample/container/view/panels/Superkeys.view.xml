@@ -1,0 +1,22 @@
+<mvc:View controllerName="sample.container.view.panels.Superkeys" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout" xmlns:co="sap.ui.commons" xmlns:vcr="dalrae.ui5.routing" xmlns:f="sap.ui.layout.form">
+	<Page navButtonPress="onNavBack" title="{i18n>detailTitle}" showNavButton="false" backgroundDesign="Transparent">
+		<content>
+			<FlexBox alignItems="Start" justifyContent="SpaceBetween">
+				<items>
+					<l:VerticalLayout width="100%">
+						<l:content>
+						</l:content>
+					</l:VerticalLayout>
+					<SearchField enableSuggestions="true" id="idSuperKeySearch" liveChange="onLiveSuperSuggest" class="superkeySearchField"
+						placeholder="Enter Super Key ..." search="onSuperKeySelected" showSearchButton="false" value="{superKeyData>/selectedSuperKey}"
+						suggest="onSuggestSuperKey" suggestionItems="{path:'referenceData>/superKeys'}" visible="true">
+						<suggestionItems>
+							<SuggestionItem description="{path:'referenceData>key'}"/>
+						</suggestionItems>
+					</SearchField>
+				</items>
+			</FlexBox>
+		</content>
+	</Page>
+</mvc:View>

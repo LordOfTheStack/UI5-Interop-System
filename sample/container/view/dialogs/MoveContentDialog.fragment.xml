@@ -1,0 +1,45 @@
+<core:FragmentDefinition 
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+		
+		<Dialog
+			title="Move Content"
+			icon="sap-icon://duplicate"
+			resizable="true"
+			draggable="true"
+			contentWidth="500px"
+			contentHeight="370px">
+			
+			<content>
+				
+				<Panel>
+					<VBox width="100%" class="centered">
+						
+						<RadioButtonGroup selectedIndex="{Layout>/MoveDirection}">
+							<buttons>
+								<RadioButton text="Move main content across to right hand panel" />
+								<RadioButton text="Move right panel content across to main view" enabled="{Layout>/MoveDirection1}" />
+							</buttons>
+						</RadioButtonGroup>
+						
+						<Image src="images/moveRight.png" width="300px" height="200px" visible="{= ${Layout>/MoveDirection} === 0 }" />
+						<Image src="images/moveLeft.png" width="300px" height="200px" visible="{= ${Layout>/MoveDirection} === 1 }" />
+						
+						<CheckBox text="Duplicate content" selected="{Layout>/MoveDuplicate}" width="280px" />
+						
+					</VBox>
+				</Panel>
+						
+			</content>
+		
+			<beginButton>
+				<Button text="Cancel" press="onMoveDialogCancel" />
+			</beginButton>
+			
+			<endButton>
+				<Button text="Apply" press="onMoveDialogApply" />
+			</endButton>
+		</Dialog>
+		
+</core:FragmentDefinition>

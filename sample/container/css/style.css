@@ -1,0 +1,113 @@
+.sapFDynamicPageTitleMainRight {
+    	margin-top: 0.7rem!important;
+}
+#sap-ui-blocklayer-popup {
+    display: none !important;   
+}
+#__container6 > div {
+    width: 780px !important;
+    height: 680px !important;
+}
+.tinyMarginPlus {
+	margin: 0.7rem!important;
+}
+/* ThemeLight or ThemeDark will be set to the <body> tag programmatically by the Detail.controller.js upon startup, you can reliably use them globally */
+.ThemeLight .rightPanel {
+	border-left-color: #DDDDDD;
+    border-left-width: 1px;
+    box-sizing: border-box;
+    border-left-style: solid;
+}
+.ThemeDark .rightPanel header {
+	border-left-color: #141414;
+    border-left-width: 1px;
+    box-sizing: border-box;
+    border-left-style: solid;
+}
+.ThemeDark .rightPanel div.sapFDynamicPageContentWrapper {
+	border-left-color: #DDDDDD;
+    border-left-width: 1px;
+    box-sizing: border-box;
+    border-left-style: solid;
+}
+.ThemeLight .masterPanel header[id$='-header'] {
+	background: #F2F8FC !important;
+}
+.ThemeDark .masterPanel header[id$='-header'] {
+	background: #3F596C !important;
+	border-right-color:  #141414;
+	border-right-width: 1px;
+    border-right-style: solid;
+    box-sizing: border-box;
+}
+.ThemeDark .masterPanel div.sapFDynamicPageContentWrapper {
+	border-right-color: #DDDDDD;
+    border-right-width: 1px;
+    border-right-style: solid;
+    box-sizing: border-box;
+}
+.ThemeDark .sapMSplitContainerMaster:after {
+	border: 0px !important;
+}
+
+.spacerTop {
+	margin-top: 2rem;
+}
+
+.sap-tablet .sapMDialog, .sap-desktop .sapMDialog {
+    min-width: 18rem;
+}
+
+.sapMMessageDialog {
+    width: 18rem;
+}
+
+.panelHeader {
+    background-color: #dcebf0 !important;
+}
+.panelText {
+    color: black !important;
+}
+
+.boldText {
+    font-weight: bold !important;
+}
+
+.sapMListTblHeaderCell {
+    vertical-align: middle !important;
+}
+
+.sapMInputBaseReadonlyInner {
+    border-style: none !important;
+    border-color: transparent !important;
+    overflow: auto;
+}
+
+.locked td div div .sapMCbActiveStateOff {
+    display: none;
+}
+
+.sapMListTblRow:focus > .sapMListTblCell, .sapMListTblRow:active > .sapMListTblCell {
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
+}
+.sapMListTblRow:focus:first-child {
+	border-left: 1px dotted black;
+}
+.sapMListTblRow:focus:last-child {
+	border-right: 1px dotted black;
+}
+
+.sapFDynamicPageContent, .sapFDynamicPageContentFitContainer {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.sapFDynamicPageContent, .sapFDynamicPageContentFitContainer {
+    padding-top: 0 !important;
+} 
+
+.centered {
+	align-items: center;
+}
